@@ -1,0 +1,6 @@
+.login-box
+  .login-logo
+    %a(href="/")
+      %b Instagram Omniauth
+  .login-logo
+    = link_to "Log in with Instagram", user_instagram_omniauth_authorize_path, { :class => "btn btn-primary", :style => 'color: #ffff;' }
