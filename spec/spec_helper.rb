@@ -37,6 +37,16 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  require 'vcr'
+  VCR.configure do |c|
+    c.cassette_library_dir = 'spec/vcr'
+    c.hook_into :webmock
+    c.allow_http_connections_when_no_cassette = true
+  end
+
+  require 'webmock/rspec'
+  WebMock.disable_net_connect!(allow_localhost: true)
+
   # This option will default to `:apply_to_host_groups` in RSpec 4 (and will
   # have no way to turn it off -- the option exists only for backwards
   # compatibility in RSpec 3). It causes shared context metadata to be
