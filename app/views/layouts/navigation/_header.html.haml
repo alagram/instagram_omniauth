@@ -6,12 +6,13 @@
       %ul.nav.navbar-nav
         %li.dropdown.user.user-menu
           %a.dropdown-toggle(data-toggle="dropdown" href="#")
-            %img.user-image(alt="(User Image)" src="http://placehold.it/160x160")
-            %span.hiddle-xs Current User
+            %img.user-image(alt="(User Image)" src="#{current_user.profile_picture}")
+            %span.hiddle-xs= current_user.name
           %ul.dropdown-menu
             %li.header
-              Current User
+              = current_user.name
             %li.divder
             %li
-              %i.fa.fa-sign-out
-                Log out
+              = link_to destroy_user_session_path, method: :delete do
+                %i.fa.fa-sign-out
+                  Log out
