@@ -10,5 +10,6 @@
     .wrapper
       = render 'layouts/navigation/header'
       .content-wrapper.no-sidebar
+        = flash_messages
         = yield
       = render 'layouts/navigation/footer'
