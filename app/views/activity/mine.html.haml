@@ -1,2 +1,12 @@
-%h1 Activity#mine
-%p Find me in app/views/activity/mine.html.haml
+.content-header
+  %h2= "#{current_user.name}'s Photos"
+.content
+  - @paginatable_array.each_slice(3) do |images|
+    .row
+      - images.each do |image|
+        .col-sm-4
+          %img.img-rounded.img-responsive{ :style => 'height: 365px; width: 365px; margin-bottom: 30px;' }(src="#{image.images.standard_resolution.url}")
+
+.row
+  .col-sm-12
+    = paginate @paginatable_array
