@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/media/recent.json?access_token=7097534881.a2164f4.a0cc5a573ba347f097f9745b59c7cc09
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 1.1.6
+      Authorization:
+      - Token token="7097534881.a2164f4.a0cc5a573ba347f097f9745b59c7cc09"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Content-Language:
+      - en
+      Date:
+      - Thu, 15 Feb 2018 10:08:48 GMT
+      Set-Cookie:
+      - csrftoken=ot8TSX23LSaFRRIC86w63mBJF6ku4En3; expires=Thu, 14-Feb-2019 10:08:48
+        GMT; Max-Age=31449600; Path=/; Secure
+      - rur=ASH; Path=/
+      - 'urlgen="{\"time\": 1518689328\054 \"197.251.187.100\": 29614}:1emGTA:wa53y9pxAdbLMwwWIAhdJqbyGc4";
+        Path=/'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '829'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "data": [{"id": "1714206774322969826_7097534881",
+        "user": {"id": "7097534881", "full_name": "Albert Agram", "profile_picture":
+        "https://scontent-syd2-1.cdninstagram.com/vp/3230896e49952035c4a21d078561d30f/5B1DB27A/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+        "username": "albert.agram"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent.cdninstagram.com/vp/2c98e3f18925745e001aa5ffbd451356/5B215E3A/t51.2885-15/s150x150/e35/27574667_149524652375933_4199966849955266560_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent.cdninstagram.com/vp/435e006ef6ad7a373f8539646ecb3a60/5B158C7D/t51.2885-15/s320x320/e35/27574667_149524652375933_4199966849955266560_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent.cdninstagram.com/vp/27f45bb839135aa7fe24d3a1f3b82eb1/5B04D03E/t51.2885-15/s640x640/sh0.08/e35/27574667_149524652375933_4199966849955266560_n.jpg"}},
+        "created_time": "1518569393", "caption": null, "user_has_liked": false, "likes":
+        {"count": 0}, "tags": [], "filter": "Normal", "comments": {"count": 0}, "type":
+        "image", "link": "https://www.instagram.com/p/BfKFfqfFrzi/", "location": null,
+        "attribution": null, "users_in_photo": []}, {"id": "1714206226395788599_7097534881",
+        "user": {"id": "7097534881", "full_name": "Albert Agram", "profile_picture":
+        "https://scontent-syd2-1.cdninstagram.com/vp/3230896e49952035c4a21d078561d30f/5B1DB27A/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+        "username": "albert.agram"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent.cdninstagram.com/vp/2fdf96b3b4b8ef89b3fb4d3327be9c7d/5B15B864/t51.2885-15/s150x150/e35/27579746_2018683698384791_4791378288926785536_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent.cdninstagram.com/vp/ccad97e6117e480f8f44d2c0f09579c5/5B17BD54/t51.2885-15/s320x320/e35/27579746_2018683698384791_4791378288926785536_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent.cdninstagram.com/vp/c2b0602b23d72f45ef986d0f9f02ba86/5B04E119/t51.2885-15/s640x640/sh0.08/e35/27579746_2018683698384791_4791378288926785536_n.jpg"}},
+        "created_time": "1518569328", "caption": {"id": "17898783463131008", "text":
+        "test post", "created_time": "1518569328", "from": {"id": "7097534881", "full_name":
+        "Albert Agram", "profile_picture": "https://scontent-syd2-1.cdninstagram.com/vp/3230896e49952035c4a21d078561d30f/5B1DB27A/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+        "username": "albert.agram"}}, "user_has_liked": false, "likes": {"count":
+        0}, "tags": [], "filter": "Normal", "comments": {"count": 0}, "type": "image",
+        "link": "https://www.instagram.com/p/BfKFXsMFXU3/", "location": null, "attribution":
+        null, "users_in_photo": []}], "meta": {"code": 200}}'
+    http_version: 
+  recorded_at: Thu, 15 Feb 2018 10:08:48 GMT
+recorded_with: VCR 3.0.3

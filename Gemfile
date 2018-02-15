@@ -46,11 +46,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
   gem 'faker'
-end
-
-group :test do
-  gem 'vcr'
-  gem 'webmock'
+  gem 'vcr', '~> 3.0.3'
+  gem 'webmock', '~> 3.1.0'
 end
 
 group :development do
